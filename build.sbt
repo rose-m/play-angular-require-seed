@@ -26,7 +26,8 @@ libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "1.11.1",
   "org.webjars" % "bootstrap" % "3.1.1-2" exclude("org.webjars", "jquery"),
   "org.webjars" % "angularjs" % "1.2.18" exclude("org.webjars", "jquery"),
-  "org.webjars" % "angular-ui-router" % "0.2.10-1" exclude("org.webjars", "angularjs")
+  "org.webjars" % "angular-ui-router" % "0.2.10-1" exclude("org.webjars", "angularjs"),
+  "org.webjars" % "angular-strap" % "2.0.4" exclude("org.webjars", "angularjs") exclude("org.webjars", "bootstrap")
 )
 
 // Scala Compiler Options
