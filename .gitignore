@@ -18,3 +18,4 @@ bin
 /.target
 activator
 activator-launch-1.2.3.jar
+atlassian-ide-plugin.xml

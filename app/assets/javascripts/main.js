@@ -17,16 +17,16 @@
         deps: ['jquery'],
         exports: 'angular'
       },
-      'angular-route': ['angular'],
       'angular-cookies': ['angular'],
+      'angular-ui-router': ['angular'],
       'bootstrap': ['jquery']
     },
     paths: {
       'requirejs': ['../lib/requirejs/require'],
       'jquery': ['../lib/jquery/jquery'],
       'angular': ['../lib/angularjs/angular'],
-      'angular-route': ['../lib/angularjs/angular-route'],
       'angular-cookies': ['../lib/angularjs/angular-cookies'],
+      'angular-ui-router': ['../lib/angular-ui-router/angular-ui-router'],
       'bootstrap': ['../lib/bootstrap/js/bootstrap'],
       'jsRoutes': ['/jsroutes']
     }
@@ -37,7 +37,7 @@
   };
 
   // Load the app. This is kept minimal so it doesn't need much updating.
-  require(['angular', 'angular-cookies', 'angular-route', 'jquery', 'bootstrap', './app'],
+  require(['angular', 'angular-cookies', 'angular-ui-router', 'jquery', 'bootstrap', './app'],
     function (angular) {
       angular.bootstrap(document, ['app']);
     }
